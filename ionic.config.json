@@ -1,0 +1,7 @@
+{
+  "name": "mewApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
