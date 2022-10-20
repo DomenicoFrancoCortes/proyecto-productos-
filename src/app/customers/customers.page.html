@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="myColor">
+    <ion-title>customers</ion-title>
+  </ion-toolbar>
+
+  <ion-toolbar>
+    <ion-searchbar placeholder="Buscar" animate (ionChange)="searchCustomer($event)"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngIf="permission">
+    
+    <ion-item *ngFor="let user of searchedUser">
+      <ion-avatar slot="start">
+        <img src="../../assets/customer-img/{{user.image}}" />
+      </ion-avatar>
+      <ion-avatar slot="end">
+        <ion-icon name="search-outline"></ion-icon>
+      </ion-avatar>
+      <ion-label>
+        <h2  class="Color">{{user.name}}</h2>
+        <h3>{{user.state}}</h3>
+        <p>{{user.description}}</p>
+      </ion-label>
+    </ion-item>
+    <ion-label *ngIf="!permission"> No tienes permiso para ver los clientes </ion-label>
+    
+
+  </ion-list> 
+</ion-content>

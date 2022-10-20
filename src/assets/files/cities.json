@@ -1,0 +1,23 @@
+{
+    "data": [
+        {
+            "name": "Bogotá",           
+            "image": "Bogotá_Colpatria_Night.jpg",
+            "link": "/bogota"
+            
+        },
+        {
+            "name": "San andres",            
+            "image": "SD6DVPG4FNGKHLKNF2LE7JKCDI.jpg"
+            
+        },
+        {
+            "name": "Cartagena",
+            "image": "ca-times.brightspotcdn.com_.jpg"
+        },
+        {
+            "name": "Medellin",
+            "image": "medellin.jpg"
+        }
+    ]
+    }
